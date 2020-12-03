@@ -13,7 +13,9 @@ If you still want to try it out: BreathingDetection/bin/Android/build.apk is the
 Everything below here is under construction. Peruse at your own risk!
 
 # Table of Contents
-This will be built after all the other sections are complete.
+- [Demo and Basic Terms Defined](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#demo-and-basic-terms-defined)
+- [Breathing Detection Algorithm in Detail](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#breathing-detection-algorithm-in-detail)
+- [Logs and Graphs](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#logs-and-graphs)
 
 # Demo and Basic Terms Defined
 [![Mobile Phone Breathing Detection Demo](http://img.youtube.com/vi/VqZaJIptPFM/0.jpg)](http://www.youtube.com/watch?v=VqZaJIptPFM "Mobile Phone Breathing Detection Demo")
