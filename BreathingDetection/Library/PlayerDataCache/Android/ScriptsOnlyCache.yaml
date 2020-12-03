@@ -42,19 +42,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11252}
+      Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11546}
     - Class: 114
-      Script: {instanceID: 11596}
+      Script: {instanceID: 11600}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 12262}
     - Class: 114
-      Script: {instanceID: 13720}
+      Script: {instanceID: 13724}
     - Class: 114
-      Script: {instanceID: 13798}
+      Script: {instanceID: 13802}
     - Class: 114
-      Script: {instanceID: 14332}
+      Script: {instanceID: 14336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -446,7 +446,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 8522697f5cacb2f050e9ab1fcf8af62c
+      Hash: 3d32ad1ea480357f4490e3dbc57ba522
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MobilePhoneBreathingDetection
@@ -561,4 +561,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main Scene.unity
-  playerPath: C:/Users/lynca/Documents/GitHub/Georgia-Tech-Classes/Research/BreathingDetection/bin/Android/build.apk
+  playerPath: Z:/Mobile-Phone-Breathing-Detection/BreathingDetection/bin/Android/build.apk

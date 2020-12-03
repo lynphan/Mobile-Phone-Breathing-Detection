@@ -9,7 +9,7 @@ using UnityEngine.UI;
 // Dear future person who is going to work on this,
 //
 // Okay I know what you're thinking. Why did I literally put every last bit of scripting in this one file?
-// Isn't that bad? Shouldn't I be making seperate classes and stuff? Can't. And the reason I'm doing it is
+// Isn't that bad? Shouldn't I be making separate classes and stuff? Can't. And the reason I'm doing it is
 // efficiency. Running multiple scripts simultaneously to gather and share data between each other causes a
 // decent performance hit on weaker devices like phones, resulting in reduced sampling rates. Don't worry. 
 // I promise doing this is hurting me inside too!
@@ -56,7 +56,7 @@ public class MobilePhoneBreathingDetection : MonoBehaviour
     LinkedList<float> yLongBuffer = new LinkedList<float>();
     LinkedList<float> zLongBuffer = new LinkedList<float>();
     int shortBufferSize = 12;   // @ 60Hz = .2 seconds
-    int longBufferSize = 1200;  // @ 60Hz = 20 seconds
+    int longBufferSize = 12000;  // @ 60Hz = 200 seconds
 
 
     // ------------------------------------------------------------------------
@@ -103,7 +103,9 @@ public class MobilePhoneBreathingDetection : MonoBehaviour
     [SerializeField]
     private Text detectionThresholdText;
     [SerializeField]
-    private Text breathDetected; // this is a temporary one to aid in debugging
+    private Text peakDetectedText; // this is a temporary one to aid in debugging
+    [SerializeField]
+    private Text breathDetectedText; 
     [SerializeField]
     private Text totalDifferenceDisplay;
     [SerializeField]
@@ -112,9 +114,8 @@ public class MobilePhoneBreathingDetection : MonoBehaviour
     // threshold calculation variables
     private float startingThreshold = 0.05f;
     private float detectionThreshold = 0.0f;
-    private float thresholdDecrement = 0.00001f; // value to decrement threshold by when a peak isn't found
-    private float thresholdIncrement = 0.00001f; // value to increment threshold by when a peak is found
-    private int thresholdCounter = 0; // helps prevent double counting as buffer decreases to zero
+    private float thresholdDecrement = 0.000005f; // value to decrement threshold by when a peak isn't found
+    private float thresholdIncrement = 0.000005f; // value to increment threshold by when a peak is found
 
     // peak detection variables
     private bool peakDetected = false; // if a peak is detected
@@ -122,10 +123,15 @@ public class MobilePhoneBreathingDetection : MonoBehaviour
     // peak detection variables - implementation with buffer
     // a buffer to make things work easier
     LinkedList<bool> peakDetectionBuffer = new LinkedList<bool>();
-    int peakDetectionBufferSize = 5; // length of buffer in samples
+    int peakDetectionBufferSize = 60; // length of buffer in samples ***change this if there are any sensitivity issues where***
+    bool goingDown = false; //  prevents breathing from being counted twice as the difference crosses the threshold on the way back down
     private bool peakDetectedFiltered = false; //after using buffer to prevent double counting
-        // this also prevents anything from being counted until the number of peaks
-        // drops down to zero, so a shorter buffer size here is better
+                                               // this also prevents anything from being counted until the number of peaks
+                                               // drops down to zero, so a shorter buffer size here is better
+
+    // add a short interval where breaths can't be detected after each breath to prevent wobble from counting multiple times
+    private float breathDetectionTimeCounter = 0.0f;
+    private float breathDetectionWaitTime = 0.25f; // wait 0.25 seconds before allowing breath detection again
 
     // breathing rate calculation variables
     LinkedList<bool> filteredPeakDetectionBuffer = new LinkedList<bool>();
@@ -263,7 +269,7 @@ public class MobilePhoneBreathingDetection : MonoBehaviour
 
 
         // Calculate thresholds
-        if (detectionThreshold <= 0.0f)
+        if (detectionThreshold <= 0.0f || detectionThreshold >= 1.0)
         {
             detectionThreshold = startingThreshold; // reset if starting or it reaches zero
         }
@@ -287,12 +293,12 @@ public class MobilePhoneBreathingDetection : MonoBehaviour
         if (totalDifference > breathingDetectionThreshold)
         {
             peakDetected = true;
-            breathDetected.text = "peaks detected";
+            peakDetectedText.text = "peaks detected";
         } 
         else
         {
             peakDetected = false;
-            breathDetected.text = "peaks not detected";
+            peakDetectedText.text = "peaks not detected";
         }
 
         // use a buffer to filter peak detections to avoid counting groups
@@ -305,30 +311,36 @@ public class MobilePhoneBreathingDetection : MonoBehaviour
                 peaksInBuffer++;
             }
         }
+                
         bool onePeakDetected = peaksInBuffer == 1;
+
         while (peakDetectionBuffer.Count > peakDetectionBufferSize)
         {
             peakDetectionBuffer.RemoveLast();
         }
         if (onePeakDetected)
         {
-            if (thresholdCounter % 2 == 0)
+            
+            if (!goingDown && breathDetectionTimeCounter > breathDetectionWaitTime)
             {
                 peakDetectedFiltered = true;
-                thresholdCounter++;
+                goingDown = true;
+                breathDetectedText.text = "breath counted";
+                breathDetectionTimeCounter = 0.0f;
             }
             else
             {
                 peakDetectedFiltered = false;
-                thresholdCounter++;
+                goingDown = false;
+                breathDetectedText.text = "breath not detected";
             }
-            
+
         } 
         else
         {
             peakDetectedFiltered = false;
         }
-        
+        breathDetectionTimeCounter += Time.deltaTime;
         
         
 
