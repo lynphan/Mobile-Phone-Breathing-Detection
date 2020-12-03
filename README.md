@@ -10,7 +10,7 @@ The project is functional but documentation is still a work in progress. Documen
 
 If you still want to try it out: BreathingDetection/bin/Android/build.apk is the most recent Android build of the software.
 
-Everything below here is under construction. Peruse at your own risk!
+**Everything below here is under construction. Peruse at your own risk!**
 
 # Table of Contents
 - [Demo and Basic Terms Defined](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#demo-and-basic-terms-defined)
@@ -35,5 +35,8 @@ Denoising - Removing or ignoring excess positives to reduce the chance for false
 
 # Breathing Detection Algorithm in Detail
 
+Under construction.
 
 # Logs and Graphs
+
+Under construction.
