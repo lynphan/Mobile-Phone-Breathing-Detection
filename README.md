@@ -31,7 +31,7 @@ Detection Threshold - This is the threshold the buffered average differences are
 Denoising - Removing or ignoring excess positives to reduce the chance for false positives or counting multiple times per breath. Especially useful in continuous live data streams such as this.
 
 
-# Breathing Detection Algorithm in Detail with Pretty Pictures
+# Breathing Detection Algorithm in Detail
 
 
 # Logs and Graphs
