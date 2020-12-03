@@ -18,6 +18,8 @@ Everything below here is under construction. Peruse at your own risk!
 - [Logs and Graphs](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#logs-and-graphs)
 
 # Demo and Basic Terms Defined
+Click the thumbnail to view the video, as GitHub readmes have no way of embedding videos.
+
 [![Mobile Phone Breathing Detection Demo](http://img.youtube.com/vi/VqZaJIptPFM/0.jpg)](http://www.youtube.com/watch?v=VqZaJIptPFM "Mobile Phone Breathing Detection Demo")
 
 Peak Detection - Finding maximums in a periodic signal. The algorithm used in this project outwardly functions similarly to peak detection but is more accurately described as threshold detection.
