@@ -12,12 +12,12 @@ If you still want to try it out: BreathingDetection/bin/Android/build.apk is the
 
 **Everything below here is under construction. Peruse at your own risk!**
 
-## Table of Contents
+# Table of Contents
 - [Demo and Basic Terms Defined](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#demo-and-basic-terms-defined)
 - [Breathing Detection Algorithm in Detail with Pretty Pictures](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#breathing-detection-algorithm-in-detail-with-pretty-pictures)
 - [Logs and Graphs](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#logs-and-graphs)
 
-## Demo and Basic Terms Defined
+# Demo and Basic Terms Defined
 Click the thumbnail to view the video, as GitHub readmes have no way of embedding videos.
 
 [![Mobile Phone Breathing Detection Demo](http://img.youtube.com/vi/VqZaJIptPFM/0.jpg)](http://www.youtube.com/watch?v=VqZaJIptPFM "Mobile Phone Breathing Detection Demo")
@@ -33,10 +33,10 @@ Detection Threshold - This is the threshold the buffered average differences are
 Denoising - Removing or ignoring excess positives to reduce the chance for false positives or counting multiple times per breath. Especially useful in continuous live data streams such as this.
 
 
-## Breathing Detection Algorithm in Detail with Pretty Pictures
+# Breathing Detection Algorithm in Detail with Pretty Pictures
 
 Under construction.
 
-## Logs and Graphs
+# Logs and Graphs
 
 Under construction.
