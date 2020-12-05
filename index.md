@@ -143,7 +143,42 @@ This fourth and final chart shows the breathing rate. Here especially we can not
 
 ## Example 2: Relaxed Breathing Lying Down
 
+placeholder
+
+{% include image.html url="images/charts/02-01 accelerometer raw data.png" description="source: Lyn Phan" %}
+
+placeholder
+
+{% include image.html url="images/charts/02-02 buffer averages.png" description="source: Lyn Phan" %}
+
+placeholder
+
+{% include image.html url="images/charts/02-03 total difference and maginitude.png" description="source: Lyn Phan" %}
+
+placeholder
+
+{% include image.html url="images/charts/02-04 breathing rate.png" description="source: Lyn Phan" %}
+
+
+
 ## Example 3: Sitting Up With Erratic Breathing While Playing A Game
+
+placeholder
+
+{% include image.html url="images/charts/03-01 accelerometer raw data.png" description="source: Lyn Phan" %}
+
+placeholder
+
+{% include image.html url="images/charts/03-02 buffer averages.png" description="source: Lyn Phan" %}
+
+placeholder
+
+{% include image.html url="images/charts/03-03 total difference and maginitude.png" description="source: Lyn Phan" %}
+
+placeholder
+
+{% include image.html url="images/charts/03-04 breathing rate.png" description="source: Lyn Phan" %}
+
 
 
 # Try It Out!
