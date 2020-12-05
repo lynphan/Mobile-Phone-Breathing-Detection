@@ -109,8 +109,17 @@ However, the main limitation is the use of only a single sensor, resulting in oc
 
 # Sample Logs and Graphs
 
-Check back soon!
+## Example 1: Sitting Up With Normal Breathing
 
+{% include image.html url="sample-log-1-screenshot.png" description="source: Lyn Phan" %}
+
+{% include image.html url="01-01 buffer averages.png" description="source: Lyn Phan" %}
+
+{% include image.html url="01-02 accelerometer raw data.png" description="source: Lyn Phan" %}
+
+{% include image.html url="01-03 total difference and maginitude.png" description="source: Lyn Phan" %}
+
+{% include image.html url="b01-04 breathing rate.png" description="source: Lyn Phan" %}
 
 
 # Try It Out!
