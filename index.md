@@ -18,12 +18,6 @@ If you still want to try it out: BreathingDetection/bin/Android/build.apk is the
 - [Logs and Graphs](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#sample-logs-and-graphs)
 
 # Video Demonstration
-Click the thumbnail to view the video, as GitHub readmes have no way of embedding videos.
-
-[![Mobile Phone Breathing Detection Demo](http://img.youtube.com/vi/VqZaJIptPFM/0.jpg)](http://www.youtube.com/watch?v=VqZaJIptPFM "Mobile Phone Breathing Detection Demo")
-
-
-
 {% include youtubePlayer.html id="VqZaJIptPFM" %}
 
 # Glossary
