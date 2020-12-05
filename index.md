@@ -81,7 +81,7 @@ Detection Threshold - This is the threshold the buffered average differences are
 Denoising and Debouncing- Removing or ignoring excess positives to reduce the chance for false positives or counting multiple times per breath. Especially useful in continuous live data streams such as this.
 
 ## Video Demonstration
-{% include youtubePlayer.html id="VqZaJIptPFM" %}
+{% include youtubePlayer.html id="VqZaJIptPFM" description="source: Lyn Phan" %}
 
 
 
