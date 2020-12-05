@@ -1,3 +1,7 @@
+---
+title: Mobile Phone Breathing Detection
+---
+
 # Table of Contents
 - [Demo and Basic Terms Defined](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#demo-and-basic-terms-defined)
 - [Breathing Detection Algorithm in Detail with Pretty Pictures](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#breathing-detection-algorithm-in-detail)
@@ -33,7 +37,7 @@ This is important because it allows for accurate breathing detection on a common
 
 ## Main Contributors
 - Lyn Cassandra Phan (Georgia Tech Brain Music Lab)
-  - phan@gatech.edu
+  - [phan@gatech.edu](mailto:phan@gatech.edu)
   - [github.com/sheepbun-monster](https://github.com/sheepbun-monster)
 
 
