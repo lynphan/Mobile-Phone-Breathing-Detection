@@ -1,9 +1,11 @@
 ---
 title: Mobile Phone Breathing Detection
 ---
+
 ![WIN_20201205_01_33_25_Pro.jpg](WIN_20201205_01_33_25_Pro.jpg)
 
 # Table of Contents
+- [Basics](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/blob/website/index.md#basics)
 - [Demo and Basic Terms Defined](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#demo-and-basic-terms-defined)
 - [Breathing Detection Algorithm in Detail with Pretty Pictures](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#breathing-detection-algorithm-in-detail)
 - [Logs and Graphs](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#sample-logs-and-graphs)
