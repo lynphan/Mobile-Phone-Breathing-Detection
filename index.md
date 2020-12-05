@@ -21,6 +21,8 @@ title: Mobile Phone Breathing Detection
   * [Glossary (In Order of Appearance)](#glossary-in-order-of-appearance)
 - [Sample Logs and Graphs](#sample-logs-and-graphs)
   * [Example 1: Sitting Up With Normal Breathing](#example-1-sitting-up-with-normal-breathing)
+  * [Example 2: Relaxed Breathing Lying Down](#example-2-relaxed-breathing-lying-down)
+  * [Example 3: Sitting Up With Erratic Breathing While Playing A Game](#example-3-sitting-up-with-erratic-breathing-while-playing-a-game)
 - [Try It Out!](#try-it-out)
 
 [comment]: # (TOC Generator Used: https://ecotrust-canada.github.io/markdown-toc/)
@@ -137,6 +139,11 @@ This third chart shows the total difference and the breathing detection threshol
 This fourth and final chart shows the breathing rate. Here especially we can notice issues with the way the data was recorded. We can confirm that the shift in position caused a short section where nothing was picked up before the algorithm self corrected. We can also see a spike right near the end caused by the participant moving, which matches spikes in the earlier charts.
 
 {% include image.html url="images/charts/01-04 breathing rate.png" description="source: Lyn Phan" %}
+
+
+## Example 2: Relaxed Breathing Lying Down
+
+## Example 3: Sitting Up With Erratic Breathing While Playing A Game
 
 
 # Try It Out!
