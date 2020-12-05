@@ -112,29 +112,29 @@ However, the main limitation is the use of only a single sensor, resulting in oc
 
 ## Example 1: Sitting Up With Normal Breathing
 
-Let's analyze some data. This is a sample taken from participant sitting at a computer desk for ten minutes, and contains about 26000 samples.
+Let's analyze some data. This is a sample taken from participant sitting at a computer desk for ten minutes, and contains about 26000 samples. The CSV file used in this example can be found [here](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/blob/main/Sample%20Logs%20and%20Graphs/breathingDetectionLog-01-sitting%20up%20normal%20breathing.csv).
 
 As we can see here, this is the CSV log file opened up in Excel. Unfortunately Excel can't handle than many lines so all the graphs have been created in LibreOffice Calc instead. Ideally I'd be using some proper charting tool like Matplotlib's pyplot, but at the time of writing there are some compatibility issues between Python on Windows and Numpy so I can't easily do that yet (see: [https://developercommunity.visualstudio.com/content/problem/1207405/fmod-after-an-update-to-windows-2004-is-causing-a.html](https://developercommunity.visualstudio.com/content/problem/1207405/fmod-after-an-update-to-windows-2004-is-causing-a.html)).
 
 {% include image.html url="sample-log-1-screenshot.png" description="source: Lyn Phan" %}
 
 
-This first chart displays the raw data from the accelerometer. Notice how each axis tends to hover around the same value as there aren't any major changes in position.
+This first chart displays the raw data from the accelerometer. Notice how each axis tends to hover around the same value as there aren't any major changes in position. Also, notice the dip that occurs on the x short buffer. That dip is a change in position that propagates through each part of the data until everything normalizes again.
 
 {% include image.html url="01-01 accelerometer raw data.png" description="source: Lyn Phan" %}
 
 
-This second chart
+This second chart shows the short and long term averages of each axis. Notices how the long term averages stay relatively steady and linear while the short term averages react quickly and move with the orientation of the phone.
 
 {% include image.html url="01-02 buffer averages.png" description="source: Lyn Phan" %}
 
 
-This third chart
+This third chart shows the total difference and the breathing detection threshold. Denoising and debouncing in the algorithm allow for breaths to be neatly counted from this interaction (not shown but it's in the log file as a column of booleans). Also, notice how the threshold adjusts to the shift in position mentioned earlier.
 
 {% include image.html url="01-03 total difference and maginitude.png" description="source: Lyn Phan" %}
 
 
-This fourth chart
+This fourth and final chart shows the breathing rate. Here especially we can notice issues with the way the data was recorded. We can confirm that the shift in position caused a short section where nothing was picked up before the algorithm self corrected. We can also see a spike right near the end caused by the participant moving, which matches spikes in the earlier charts.
 
 {% include image.html url="01-04 breathing rate.png" description="source: Lyn Phan" %}
 
