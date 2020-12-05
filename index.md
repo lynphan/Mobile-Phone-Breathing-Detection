@@ -20,6 +20,7 @@ title: Mobile Phone Breathing Detection
   * [Is This Even Good?](#is-this-even-good-)
   * [Glossary (In Order of Appearance)](#glossary--in-order-of-appearance-)
 - [Sample Logs and Graphs](#sample-logs-and-graphs)
+  * [Example 1: Sitting Up With Normal Breathing](#example-1--sitting-up-with-normal-breathing)
 - [Try It Out!](#try-it-out-)
 
 [comment]: # (TOC Generator Used: https://ecotrust-canada.github.io/markdown-toc/)
