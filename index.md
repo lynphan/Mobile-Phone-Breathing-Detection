@@ -112,11 +112,18 @@ However, the main limitation is the use of only a single sensor, resulting in oc
 
 ## Example 1: Sitting Up With Normal Breathing
 
+Let's analyze some data. This is a sample taken from participant sitting at a computer desk for ten minutes, and contains about 26000 samples.
+
 {% include image.html url="sample-log-1-screenshot.png" description="source: Lyn Phan" %}
 
-{% include image.html url="01-01 buffer averages.png" description="source: Lyn Phan" %}
+As we can see here, this is the CSV log file opened up in Excel. Unfortunately Excel can't handle than many lines so all the graphs have been created in LibreOffice Calc instead. Ideally I'd be using some proper charting tool like Matplotlib's pyplot, but at the time of writing there are some compatibility issues between Python on Windows and Numpy so I can't easily do that yet (see: [https://developercommunity.visualstudio.com/content/problem/1207405/fmod-after-an-update-to-windows-2004-is-causing-a.html](https://developercommunity.visualstudio.com/content/problem/1207405/fmod-after-an-update-to-windows-2004-is-causing-a.html)).
 
-{% include image.html url="01-02 accelerometer raw data.png" description="source: Lyn Phan" %}
+
+{% include image.html url="01-01 accelerometer raw data.png" description="source: Lyn Phan" %}
+
+This first chart displays the raw data of the
+
+{% include image.html url="01-02 buffer averages.png" description="source: Lyn Phan" %}
 
 {% include image.html url="01-03 total difference and maginitude.png" description="source: Lyn Phan" %}
 
