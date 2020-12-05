@@ -5,6 +5,7 @@ title: Mobile Phone Breathing Detection
 ![WIN_20201205_01_33_25_Pro.jpg](WIN_20201205_01_33_25_Pro.jpg)
 
 # Table of Contents
+- [Table of Contents](#table-of-contents)
 - [Basics](#basics)
   * [Objective](#objective)
   * [What Features Does This Have?](#what-features-does-this-have-)
@@ -54,6 +55,10 @@ This is important because it allows for accurate breathing detection on a common
   - [github.com/sheepbun-monster](https://github.com/sheepbun-monster)
 
 
+# How To Use
+
+## Interface Guide
+![interface-guide.png](interface-guide.png)
 
 # How Does This Work?
 
@@ -87,8 +92,7 @@ Denoising and Debouncing- Removing or ignoring excess positives to reduce the ch
 
 Under construction.
 
-# Current State of the Project
-The project is functional but documentation is still a work in progress. Documentation about the algorithm used and procedure will be coming shortly, in addition to videos and pictures.
+
 
 # Try It Out
 
