@@ -2,7 +2,7 @@
 title: Mobile Phone Breathing Detection
 ---
 
-{% include image.html url="WIN_20201205_01_33_25_Pro.jpg" description="source: Lyn Phan" %}
+{% include image.html url="images/WIN_20201205_01_33_25_Pro.jpg" description="source: Lyn Phan" %}
 
 # Table of Contents
 - [Table of Contents](#table-of-contents)
@@ -73,7 +73,7 @@ This is important because it allows for accurate breathing detection on a common
 7. If further analysis is desired, connect the phone up to a computer to retrieve the CSV log file. This is feature may require tweaking to work on iOS.
 
 ## Interface Guide
-{% include image.html url="interface-guide.png" description="source: Lyn Phan" %}
+{% include image.html url="images/interface-guide.png" description="source: Lyn Phan" %}
 
 Note that each axis position value is a floating point value measured between -1.0f and +1.0f. Any values referring to position are simply a planar representation of the rotational position. You can observe how this works by running the app and watching how the position values react to movement of the phone.
 
@@ -86,7 +86,7 @@ Note that each axis position value is a floating point value measured between -1
 # How Does This Work?
 
 ## The Breathing Detection Algorithm
-{% include image.html url="breathing-detection-algorithm-diagram.png" description="source: Lyn Phan" %}
+{% include image.html url="images/breathing-detection-algorithm-diagram.png" description="source: Lyn Phan" %}
 
 ## Is This Even Good?
 Yes it definitely is. Using this method with data buffers, instead of more traditional reference point measurements, allows for slow deviations in participant movement, resulting in more accuracy over long term data collection. Since the thresholds are calculated automatically, no prior information or manual calibration is needed from either the device or the participant. And this works on even cheap smartphones and only uses a single accelerometer sensor. This is a true set it and forget it solution.
