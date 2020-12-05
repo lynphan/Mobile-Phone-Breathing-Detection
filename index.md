@@ -21,7 +21,7 @@ title: Mobile Phone Breathing Detection
   * [Glossary (In Order of Appearance)](#glossary-in-order-of-appearance)
 - [Sample Logs and Graphs](#sample-logs-and-graphs)
   * [Example 1: Sitting Up With Normal Breathing](#example-1-sitting-up-with-normal-breathing)
-  * [Example 2: Relaxed Breathing Lying Down](#example-2-relaxed-breathing-lying-down)
+  * [Example 2: Lying Down With Relaxed Breathing](#example-2-lying-down-with-relaxed-breathing)
   * [Example 3: Sitting Up With Erratic Breathing While Playing A Game](#example-3-sitting-up-with-erratic-breathing-while-playing-a-game)
 - [Try It Out!](#try-it-out)
 
@@ -141,7 +141,7 @@ This fourth and final chart shows the breathing rate. Here especially we can not
 {% include image.html url="images/charts/01-04 breathing rate.png" description="source: Lyn Phan" %}
 
 
-## Example 2: Relaxed Breathing Lying Down
+## Example 2: Lying Down With Relaxed Breathing
 
 placeholder
 
