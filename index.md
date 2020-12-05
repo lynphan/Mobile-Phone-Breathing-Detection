@@ -3,6 +3,7 @@ title: Mobile Phone Breathing Detection
 ---
 
 ![WIN_20201205_01_33_25_Pro.jpg](WIN_20201205_01_33_25_Pro.jpg "WIN_20201205_01_33_25_Pro.jpg")
+*image_caption*
 
 {% include image.html url="WIN_20201205_01_33_25_Pro.jpg" description="source: Lyn Phan" %}
 
