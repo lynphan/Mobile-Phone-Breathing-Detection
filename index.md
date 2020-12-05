@@ -22,6 +22,10 @@ Click the thumbnail to view the video, as GitHub readmes have no way of embeddin
 
 [![Mobile Phone Breathing Detection Demo](http://img.youtube.com/vi/VqZaJIptPFM/0.jpg)](http://www.youtube.com/watch?v=VqZaJIptPFM "Mobile Phone Breathing Detection Demo")
 
+
+
+{% include youtubePlayer.html id="VqZaJIptPFM" %}
+
 # Glossary
 Peak Detection - Finding maximums in a periodic signal. The algorithm used in this project outwardly functions similarly to peak detection but is more accurately described as threshold detection.
 
