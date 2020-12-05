@@ -17,11 +17,12 @@ If you still want to try it out: BreathingDetection/bin/Android/build.apk is the
 - [Breathing Detection Algorithm in Detail with Pretty Pictures](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#breathing-detection-algorithm-in-detail)
 - [Logs and Graphs](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#sample-logs-and-graphs)
 
-# Demo and Basic Terms Defined
+# Video Demonstration
 Click the thumbnail to view the video, as GitHub readmes have no way of embedding videos.
 
 [![Mobile Phone Breathing Detection Demo](http://img.youtube.com/vi/VqZaJIptPFM/0.jpg)](http://www.youtube.com/watch?v=VqZaJIptPFM "Mobile Phone Breathing Detection Demo")
 
+# Glossary
 Peak Detection - Finding maximums in a periodic signal. The algorithm used in this project outwardly functions similarly to peak detection but is more accurately described as threshold detection.
 
 Positional Buffered Averages - Position data from each axis is recorded into a buffer of a certain length. All of these values are then averaged to produce an average value for each axis over the time duration of the buffer.
