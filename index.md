@@ -58,15 +58,11 @@ This is important because it allows for accurate breathing detection on a common
 # How To Use
 
 ## Interface Guide
-![interface-guide.png](interface-guide.png "interface-guide.png")
-
 {% include image.html url="interface-guide.png" description="source: Lyn Phan" %}
 
 # How Does This Work?
 
 ## Breathing Detection Algorithm Flowchart
-![breathing-detection-algorithm-diagram.png](breathing-detection-algorithm-diagram.png "breathing-detection-algorithm-diagram.png")
-
 {% include image.html url="breathing-detection-algorithm-diagram.png" description="source: Lyn Phan" %}
 
 
