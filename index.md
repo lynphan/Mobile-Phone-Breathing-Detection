@@ -16,8 +16,9 @@ title: Mobile Phone Breathing Detection
   * [Interface Guide](#interface-guide)
   * [Video Demonstration](#video-demonstration)
 - [How Does This Work?](#how-does-this-work-)
-  * [Breathing Detection Algorithm Flowchart](#breathing-detection-algorithm-flowchart)
-    + [Glossary (In Order of Relevance)](#glossary--in-order-of-relevance-)
+  * [The Breathing Detection Algorithm](#the-breathing-detection-algorithm)
+  * [Is This Even Good?](#is-this-even-good-)
+  * [Glossary (In Order of Appearance)](#glossary--in-order-of-appearance-)
 - [Sample Logs and Graphs](#sample-logs-and-graphs)
 - [Try It Out!](#try-it-out-)
 
@@ -81,12 +82,15 @@ Note that each axis position value is a floating point value measured between -1
 
 # How Does This Work?
 
-## Breathing Detection Algorithm Flowchart
+## The Breathing Detection Algorithm
 {% include image.html url="breathing-detection-algorithm-diagram.png" description="source: Lyn Phan" %}
 
+## Is This Even Good?
+Yes it definitely is. Using this method with data buffers, instead of more traditional reference point measurements, allows for slow deviations in participant movement, resulting in more accuracy over long term data collection. Since the thresholds are calculated automatically, no prior information or manual calibration is needed from either the device or the participant. And this works on even cheap smartphones and only uses a single accelerometer sensor. This is a true set it and forget it solution.
 
+However, the main limitation is the use of only a single sensor, resulting in occasionally missed peaks or false positives. Much more precise motion tracking could be done through the use of a gyroscope and accelerometer in tandem. This is how extremely precise motion controls are achieved on modern game controllers, notably on the Nintendo Switch Pro Controller. Since not every phone contains a gyroscope, and adding support would dramatically increase implementation time, it wasn't included for this project.
 
-### Glossary (In Order of Relevance)
+## Glossary (In Order of Appearance)
 **Peak Detection** - Finding maximums in a periodic signal. The algorithm used in this project outwardly functions similarly to peak detection but can be more accurately described as threshold detection.
 
 **Position Buffers** - Position data from each axis is recorded into a buffer of a certain length.
