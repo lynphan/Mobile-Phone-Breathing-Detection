@@ -1,26 +1,28 @@
-# Mobile Phone Breathing Detection
-
-Lyn Cassandra Phan @ Georgia Tech Brain Music Lab
-
-The goal of this project was to build a cross-platform app to accurately detect breathing using a fast and efficient peak detection algorithm I designed. The app has full logging capabilities and is designed to be easily extended and used in a lab environment to gather data.
-
-The platform chosen was Unity, due to easier compatibility, as well as ease of development since this project was built during one Fall 2020 semester at Georgia Tech. The original prototype was demoed during Spring 2020.
-
-The project is functional but documentation is still a work in progress. Documentation about the algorithm used and procedure will be coming shortly, in addition to videos and pictures.
-
-If you still want to try it out: BreathingDetection/bin/Android/build.apk is the most recent Android build of the software.
-
-**Everything below here is under construction. Peruse at your own risk!**
-
-# Table of Contents
+#Table of Contents
 - [Demo and Basic Terms Defined](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#demo-and-basic-terms-defined)
 - [Breathing Detection Algorithm in Detail with Pretty Pictures](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#breathing-detection-algorithm-in-detail)
 - [Logs and Graphs](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#sample-logs-and-graphs)
 
-# Video Demonstration
+# Basics
+## What is thing?
+
+## Goals
+The goal of this project was to build a cross-platform app to accurately detect breathing using a fast and efficient peak detection algorithm I designed. The app has full logging capabilities and is designed to be easily extended and used in a lab environment to gather data.
+
+## Why Unity
+The platform chosen was Unity, due to easier compatibility, as well as ease of development since this project was built during one Fall 2020 semester at Georgia Tech. The original prototype was demoed during Spring 2020.
+
+
+## Main Contributors
+Lyn Cassandra Phan (Georgia Tech Brain Music Lab)
+
+
+# How Does It Work?
+
+## Video Demonstration
 {% include youtubePlayer.html id="VqZaJIptPFM" %}
 
-# Glossary
+## Glossary
 Peak Detection - Finding maximums in a periodic signal. The algorithm used in this project outwardly functions similarly to peak detection but is more accurately described as threshold detection.
 
 Positional Buffered Averages - Position data from each axis is recorded into a buffer of a certain length. All of these values are then averaged to produce an average value for each axis over the time duration of the buffer.
@@ -32,10 +34,17 @@ Detection Threshold - This is the threshold the buffered average differences are
 Denoising - Removing or ignoring excess positives to reduce the chance for false positives or counting multiple times per breath. Especially useful in continuous live data streams such as this.
 
 
-# Breathing Detection Algorithm in Detail
+## Breathing Detection Algorithm in Detail
 
 ![breathing-detection-algorithm-diagram.png](breathing-detection-algorithm-diagram.png)
 
 # Sample Logs and Graphs
 
 Under construction.
+
+# Current State of the Project
+The project is functional but documentation is still a work in progress. Documentation about the algorithm used and procedure will be coming shortly, in addition to videos and pictures.
+
+# Try It Out
+
+If you want to try it out: BreathingDetection/bin/Android/build.apk is the most recent Android build of the software. You'll need to allow apps to be sideloaded on your device
