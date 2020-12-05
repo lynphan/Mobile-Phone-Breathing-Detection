@@ -2,7 +2,9 @@
 title: Mobile Phone Breathing Detection
 ---
 
-![WIN_20201205_01_33_25_Pro.jpg](WIN_20201205_01_33_25_Pro.jpg)
+![WIN_20201205_01_33_25_Pro.jpg](WIN_20201205_01_33_25_Pro.jpg "WIN_20201205_01_33_25_Pro.jpg")
+
+{% include image.html url="WIN_20201205_01_33_25_Pro.jpg" description="source: Lyn Phan" %}
 
 # Table of Contents
 - [Table of Contents](#table-of-contents)
@@ -58,12 +60,12 @@ This is important because it allows for accurate breathing detection on a common
 # How To Use
 
 ## Interface Guide
-![interface-guide.png](interface-guide.png)
+![interface-guide.png](interface-guide.png "interface-guide.png")
 
 # How Does This Work?
 
 ## Breathing Detection Algorithm Flowchart
-![breathing-detection-algorithm-diagram.png](breathing-detection-algorithm-diagram.png)
+![breathing-detection-algorithm-diagram.png](breathing-detection-algorithm-diagram.png "breathing-detection-algorithm-diagram.png")
 
 
 
