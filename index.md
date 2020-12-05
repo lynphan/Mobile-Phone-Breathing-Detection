@@ -12,11 +12,12 @@ title: Mobile Phone Breathing Detection
   * [Why Unity Instead Of Native Code?](#why-unity-instead-of-native-code-)
   * [Main Contributors](#main-contributors)
 - [How To Use](#how-to-use)
+  * [Basic Procedure](#basic-procedure)
   * [Interface Guide](#interface-guide)
+  * [Video Demonstration](#video-demonstration)
 - [How Does This Work?](#how-does-this-work-)
   * [Breathing Detection Algorithm Flowchart](#breathing-detection-algorithm-flowchart)
     + [Glossary (In Order of Relevance)](#glossary--in-order-of-relevance-)
-  * [Video Demonstration](#video-demonstration)
 - [Sample Logs and Graphs](#sample-logs-and-graphs)
 - [Try It Out!](#try-it-out-)
 
@@ -59,7 +60,7 @@ This is important because it allows for accurate breathing detection on a common
 # How To Use
 
 ## Basic Procedure
-1. Open the app on a compatible device with an accelerometer. 
+1. Open the app on a compatible device with an accelerometer.
 2. Place the app on a participant's abdomen. Participant can be sitting up with the phone leaned against them, but lying down produces the best results since it reduce movement.
 3. Wait for the app to calibrate. Total difference should be relatively close to zero and the threshold value should have settled to within a ±0.05 range. If this is taking too long, the app can be opened on the phone after it is placed so that it immediately zeroes to that position.
 4. Make a note of the directory where the log will be stored if you want to retrieve it later.
