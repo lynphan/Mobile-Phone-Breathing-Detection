@@ -120,7 +120,7 @@ However, the main limitation is the use of only a single sensor, resulting in oc
 
 {% include image.html url="01-03 total difference and maginitude.png" description="source: Lyn Phan" %}
 
-{% include image.html url="b01-04 breathing rate.png" description="source: Lyn Phan" %}
+{% include image.html url="01-04 breathing rate.png" description="source: Lyn Phan" %}
 
 
 # Try It Out!
