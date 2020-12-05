@@ -1,7 +1,6 @@
 ---
 title: Mobile Phone Breathing Detection
 ---
-WIN_20201205_01_33_25_Pro.jpg
 ![WIN_20201205_01_33_25_Pro.jpg](WIN_20201205_01_33_25_Pro.jpg)
 
 # Table of Contents
