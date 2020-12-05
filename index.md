@@ -1,4 +1,4 @@
-#Table of Contents
+# Table of Contents
 - [Demo and Basic Terms Defined](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#demo-and-basic-terms-defined)
 - [Breathing Detection Algorithm in Detail with Pretty Pictures](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#breathing-detection-algorithm-in-detail)
 - [Logs and Graphs](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#sample-logs-and-graphs)
