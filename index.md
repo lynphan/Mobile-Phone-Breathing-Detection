@@ -10,6 +10,20 @@ title: Mobile Phone Breathing Detection
 - [Breathing Detection Algorithm in Detail with Pretty Pictures](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#breathing-detection-algorithm-in-detail)
 - [Logs and Graphs](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/tree/development#sample-logs-and-graphs)
 
+- [Table of Contents](#table-of-contents)
+- [Basics](#basics)
+  * [Objective](#objective)
+  * [What Features Does This Have?](#what-features-does-this-have-)
+  * [Why Unity Instead Of Native Code?](#why-unity-instead-of-native-code-)
+  * [Main Contributors](#main-contributors)
+- [How Does This Work?](#how-does-this-work-)
+  * [Breathing Detection Algorithm Flowchart](#breathing-detection-algorithm-flowchart)
+    + [Glossary (In Order of Relevance)](#glossary--in-order-of-relevance-)
+  * [Video Demonstration](#video-demonstration)
+- [Sample Logs and Graphs](#sample-logs-and-graphs)
+- [Current State of the Project](#current-state-of-the-project)
+- [Try It Out](#try-it-out)
+
 # Basics
 ## Objective
 An cross-platform app that can gather breathing data as cheaply and efficiently as possible for use in a lab environment.
