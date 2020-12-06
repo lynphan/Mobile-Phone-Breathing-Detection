@@ -114,6 +114,8 @@ However, the main limitation is the use of only a single sensor, resulting in oc
 
 ## Example 1: Sitting Up With Normal Breathing
 
+Sample rate: 60 samples/second
+
 Let's analyze some data. This is a sample taken from participant sitting at a computer desk for ten minutes, and contains about 26000 samples. The CSV file used in this example can be found [here](https://github.com/sheepbun-monster/Mobile-Phone-Breathing-Detection/blob/main/Sample%20Logs%20and%20Graphs/breathingDetectionLog-01-sitting%20up%20normal%20breathing.csv).
 
 As we can see here, this is the CSV log file opened up in Excel. Unfortunately Excel can't handle than many lines so all the graphs have been created in LibreOffice Calc instead. Ideally I'd be using some proper charting tool like Matplotlib's pyplot, but at the time of writing there are some compatibility issues between Python on Windows and Numpy so I can't easily do that yet (see: [https://developercommunity.visualstudio.com/content/problem/1207405/fmod-after-an-update-to-windows-2004-is-causing-a.html](https://developercommunity.visualstudio.com/content/problem/1207405/fmod-after-an-update-to-windows-2004-is-causing-a.html)).
@@ -143,19 +145,23 @@ This fourth and final chart shows the breathing rate. Here especially we can not
 
 ## Example 2: Lying Down With Relaxed Breathing
 
-placeholder
+Sample rate: 60 samples/second
+
+This sample log was taken with the participant lying down and being directed to relax with the phone placed on their stomach.
+
+We can confirm this orientation by seeing the that the Z value stays near -1.0, and the X and Y values stays near 0.0, indicating the phone was laying face up on the participant. We can also see several instances where near impulse responses are present in the data, as all three axes are show a change in position. These were from when the participant moved. At the end we can see a giant impulse response as the phone was picked up and recording was halted.
 
 {% include image.html url="images/charts/02-01 accelerometer raw data.png" description="source: Lyn Phan" %}
 
-placeholder
+This second chart confirms what we knew earlier, and doesn't add much, but we can clearly see some kind of periodic movement with the short term averages.
 
 {% include image.html url="images/charts/02-02 buffer averages.png" description="source: Lyn Phan" %}
 
-placeholder
+The third chart also shows the shifts in movement from the first two. Here we can also see the periodic change of the total difference and how the breathing detection threshold stayed near constant the entire time.
 
 {% include image.html url="images/charts/02-03 total difference and maginitude.png" description="source: Lyn Phan" %}
 
-placeholder
+This last chart is much more interesting because it shows a calculated breathing rate over time. The one spot where the value reaches zero is very interesting, as the participant had breathed steadily the entire test. This may have been a result of a more than subtle shift in position, or the parameters of the algorithm might needed to be adjusted to decrease the threshold more quickly for this specific case.
 
 {% include image.html url="images/charts/02-04 breathing rate.png" description="source: Lyn Phan" %}
 
@@ -163,19 +169,23 @@ placeholder
 
 ## Example 3: Sitting Up With Erratic Breathing While Playing A Game
 
-placeholder
+Sample rate: 60 samples/second
+
+This third log was taken with a participant playing a first person shooter game. The phone was leaned up against their abdomen or recording. The expected result was a much more erratic change in breathing rate and positions over time.
+
+This first chart shows much more dramatic movement, as indicated by the increased wiggliness of all three axes.
 
 {% include image.html url="images/charts/03-01 accelerometer raw data.png" description="source: Lyn Phan" %}
 
-placeholder
+In the second chart we can also see that there is more movement, as well as changes in position over time. Notice the subtle curve in the long Y buffer as well as the changes over time in the long Z buffer.
 
 {% include image.html url="images/charts/03-02 buffer averages.png" description="source: Lyn Phan" %}
 
-placeholder
+This third chart also shows some change over time due to the curved threshold line. If the graph did not scale to the extreme last section of values, it would likely look a lot more like the corresponding chart in the first example.
 
 {% include image.html url="images/charts/03-03 total difference and maginitude.png" description="source: Lyn Phan" %}
 
-placeholder
+As expected, the breathing rate recorded in this log matches the expected hypothesis of a much more dramatic shift in breathing rate throughout the trial. The decreasing and flatline at the end could have been caused by many confounding variables, but it is most likely due to the position shift near the end that we can see as a near vertically divided section in the first chart.
 
 {% include image.html url="images/charts/03-04 breathing rate.png" description="source: Lyn Phan" %}
 
@@ -186,3 +196,6 @@ placeholder
 If you want to try out the Android build, BreathingDetection/bin/Android/build.apk is the most recent Android build of the software. You'll need to allow apps to be sideloaded on your device to run this. This build was tested on a Motorola Moto G5 Plus.
 
 There's no iOS build of this yet as I didn't have time to ensure compatibility, but you should be able to clone this repository and build it yourself. There may be issues with the way files are stored on iPhones, but that's something I didn't get a chance to look into yet.
+
+
+[comment]: # (Trans rights!)
