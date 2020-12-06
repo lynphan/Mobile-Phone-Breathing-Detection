@@ -29,7 +29,7 @@ title: Mobile Phone Breathing Detection
 
 # Basics
 ## Objective
-An cross-platform app that can gather breathing data as cheaply and efficiently as possible for use in a lab environment.
+The goal is to build a cross-platform mobile app that can gather breathing data as cheaply and efficiently as possible for use in a lab environment.
 
 This is important because it allows for accurate breathing detection on a common device, the smartphone. This project can help increase the availability of information on hardware-minimal software-oriented biometric measurement tools, since they can be used where more complicated machinery might not be available.
 
